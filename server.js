@@ -2,6 +2,7 @@
 // =============================================================
 var express = require("express");
 var path = require("path");
+require("main.js"
 
 // Sets up the Express App
 // =============================================================
@@ -12,8 +13,9 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-const main = "main.js"
-app.use(main);
+app.post("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
 
 // Starts the server to begin listening
 // =============================================================
