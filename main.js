@@ -1,9 +1,7 @@
 
 document.getElementById("complement").addEventListener("click", generateRandomText);
 
-
 function generateRandomText() {
- // let complement = ["Happy and you know it", "Happy and you don't know it"]
   let complement = [
     "Your smile is contagious.",
     "I bet you make babies smile.",
