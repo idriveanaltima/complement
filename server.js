@@ -12,6 +12,9 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
+const main = "main.js"
+app.use(main);
+
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
