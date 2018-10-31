@@ -2,7 +2,7 @@
 // =============================================================
 var express = require("express");
 var path = require("path");
-require("main.js"
+require("main.js")
 
 // Sets up the Express App
 // =============================================================
