@@ -2,7 +2,7 @@
 // =============================================================
 var express = require("express");
 var path = require("path");
-require("main.js")
+
 
 // Sets up the Express App
 // =============================================================
@@ -10,12 +10,11 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
-app.post("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
+app.use(express.static('public'))
+
 
 // Starts the server to begin listening
 // =============================================================
